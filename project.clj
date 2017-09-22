@@ -6,12 +6,12 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.908"]
                  [com.cemerick/piggieback "0.2.2"]
-                 [org.clojure/tools.nrepl "0.2.10"]
-                 [cider/cider-nrepl "0.15.0-SNAPSHOT"]]
+                 [org.clojure/tools.nrepl "0.2.10"]]
                  
                  :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
-                 :plugins [[lein-cljsbuild "1.1.7"]]
+                 :plugins [[lein-cljsbuild "1.1.7"]
+                           [cider/cider-nrepl "0.15.0-SNAPSHOT"]]
 
                  :cljsbuild {
                   :builds [{:id "dev"
